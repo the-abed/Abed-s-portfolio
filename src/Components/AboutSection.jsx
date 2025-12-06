@@ -1,4 +1,4 @@
-import { AnimatePresence, motion } from 'framer-motion';
+import { AnimatePresence, motion } from "framer-motion";
 import {
   Briefcase,
   Calendar,
@@ -12,77 +12,77 @@ import {
   Target,
   Twitter,
   User,
-} from 'lucide-react';
-import { useEffect, useState } from 'react';
-import rashel from '../assets/icons/profile-image.jpg';
+} from "lucide-react";
+import { useEffect, useState } from "react";
+import rashel from "../assets/icons/profile-image.jpg";
 
 export const AboutSection = () => {
-  const [activeTab, setActiveTab] = useState('personal');
+  const [activeTab, setActiveTab] = useState("personal");
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [counter, setCounter] = useState(0);
 
   const achievements = [
     {
-      number: '8+',
-      label: 'Projects',
+      number: "8+",
+      label: "Projects",
       icon: <Briefcase className="h-5 w-5" />,
-      suffix: '',
+      suffix: "",
     },
     {
-      number: '1',
-      label: 'Years Exp',
+      number: "1",
+      label: "Years Exp",
       icon: <Calendar className="h-5 w-5" />,
-      suffix: '+',
+      suffix: "+",
     },
     {
-      number: '90',
-      label: 'Success',
+      number: "90",
+      label: "Success",
       icon: <Target className="h-5 w-5" />,
-      suffix: '%',
+      suffix: "%",
     },
     {
-      number: '0',
-      label: 'Clients',
+      number: "0",
+      label: "Clients",
       icon: <User className="h-5 w-5" />,
-      suffix: '+',
+      suffix: "+",
     },
   ];
 
   const techStack = [
     {
-      category: 'Frontend',
-      items: ['React', 'Next.js', 'JavaScript', 'HTML', 'Tailwind'],
+      category: "Frontend",
+      items: ["React", "Next.js", "JavaScript", "HTML", "Tailwind"],
     },
     {
-      category: 'Backend',
-      items: ['Node.js', 'Express', 'JavaScript', 'Firebase'],
+      category: "Backend",
+      items: ["Node.js", "Express", "JavaScript", "Firebase"],
     },
-    { category: 'Cloud', items: ['Vercel', 'MongoDB'] },
+    { category: "Cloud", items: ["Vercel", "MongoDB"] },
   ];
 
   const features = [
-    'MERN-stack expertise',
-    'Clean, maintainable code',
-    'Performance optimization',
-    'Agile methodology',
+    "MERN-stack expertise",
+    "Clean, maintainable code",
+    "Performance optimization",
+    "Agile methodology",
 
-    'Timely delivery',
+    "Timely delivery",
   ];
 
   const socialLinks = [
-      {
-          icon: <Github className="h-5 w-5" />,
-          href: "https://github.com/rashel-dev",
-      },
-      {
-          icon: <Linkedin className="h-5 w-5" />,
-          href: "https://www.linkedin.com/in/mohammad-rashel/",
-      },
-      { icon: <Twitter className="h-5 w-5" />, href: "#" },
-      {
-          icon: <Mail className="h-5 w-5" />,
-          href: "mrashel.dev@gmail.com",
-      },
+    {
+      icon: <Github className="h-5 w-5" />,
+      href: "https://github.com/the-abed",
+    },
+    {
+      icon: <Linkedin className="h-5 w-5" />,
+      href: "https://www.linkedin.com/in/mohammad-abed-azim/",
+    },
+    { icon: <Twitter className="h-5 w-5" />, href: "#" },
+    {
+      icon: <Mail className="h-5 w-5" />,
+      href: "abedpersonal2024@gmail.com",
+    },
   ];
 
   const tabContent = {
@@ -91,14 +91,14 @@ export const AboutSection = () => {
     professional:
       "With 1+ years in full-stack development, I've delivered 8+ successful projects using modern technologies. I specialize in scalable architecture and performance optimization.",
     approach:
-      'I believe in clean code, thorough testing, and user-centered design. My process emphasizes collaboration, agile methodologies, and continuous improvement.',
+      "I believe in clean code, thorough testing, and user-centered design. My process emphasizes collaboration, agile methodologies, and continuous improvement.",
   };
 
   useEffect(() => {
     const handleMouseMove = (e) =>
       setMousePosition({ x: e.clientX, y: e.clientY });
-    window.addEventListener('mousemove', handleMouseMove);
-    return () => window.removeEventListener('mousemove', handleMouseMove);
+    window.addEventListener("mousemove", handleMouseMove);
+    return () => window.removeEventListener("mousemove", handleMouseMove);
   }, []);
 
   useEffect(() => {
@@ -111,9 +111,9 @@ export const AboutSection = () => {
 
   // Programmatic download function
   const handleDownload = () => {
-    const link = document.createElement('a');
-    link.href = '/Mohammad-Rashel-resume-2025.pdf'; // Must be in public folder
-    link.download = 'Mohammad-Rashel-resume-2025.pdf';
+    const link = document.createElement("a");
+    link.href = "/Resume_of_Mohammad_Abed.pdf"; // Must be in public folder
+    link.download = "Resume_of_Mohammad_Abed.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -172,9 +172,9 @@ export const AboutSection = () => {
             </span>
           </h1>
           <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Building digital experiences that combine{' '}
-            <span className="text-primary font-semibold">innovation</span>,{' '}
-            <span className="text-primary font-semibold">performance</span>, and{' '}
+            Building digital experiences that combine{" "}
+            <span className="text-primary font-semibold">innovation</span>,{" "}
+            <span className="text-primary font-semibold">performance</span>, and{" "}
             <span className="text-primary font-semibold">elegance</span>
           </p>
         </div>
@@ -197,7 +197,7 @@ export const AboutSection = () => {
                     <div className="w-28 h-28 sm:w-32 sm:h-32 rounded-2xl overflow-hidden border-4 border-primary/20 shadow-2xl transition-all duration-500 group-hover:border-primary/40 group-hover:scale-105 md:group-hover:scale-110 relative">
                       <img
                         src={rashel}
-                        alt="Mohammad Rashel"
+                        alt="Mohammad Abed"
                         className="w-full h-full object-cover"
                       />
                       <div className="absolute -bottom-2 -right-2 w-6 h-6 sm:w-8 sm:h-8 bg-green-500 rounded-full border-4 border-background flex items-center justify-center">
@@ -209,7 +209,7 @@ export const AboutSection = () => {
                   {/* Achievements */}
                   <div className="flex-1 text-center md:text-left">
                     <h2 className="text-2xl sm:text-3xl font-bold mb-1 sm:mb-2">
-                      Mohammad Rashel
+                      Mohammad Abed
                     </h2>
                     <p className="text-primary text-base sm:text-lg font-semibold mb-3 sm:mb-4">
                       MERN Stack Developer
@@ -220,8 +220,8 @@ export const AboutSection = () => {
                           key={index}
                           className={`p-2 sm:p-3 rounded-xl bg-background/50 border border-border transition-all duration-300 hover:scale-105 hover:border-primary/30 ${
                             counter === index
-                              ? 'bg-primary/10 border-primary/50'
-                              : ''
+                              ? "bg-primary/10 border-primary/50"
+                              : ""
                           }`}
                         >
                           <div className="flex items-center gap-2 justify-center md:justify-start">
@@ -244,14 +244,14 @@ export const AboutSection = () => {
 
                 {/* Tabs */}
                 <div className="flex flex-col sm:flex-row border-b border-border mb-4 sm:mb-6">
-                  {['personal', 'professional', 'approach'].map((tab) => (
+                  {["personal", "professional", "approach"].map((tab) => (
                     <button
                       key={tab}
                       onClick={() => setActiveTab(tab)}
                       className={`flex-1 py-2 sm:py-3 px-2 sm:px-4 text-sm sm:text-base font-medium transition-all duration-300 ${
                         activeTab === tab
-                          ? 'text-primary border-b-2 border-primary'
-                          : 'text-muted-foreground hover:text-foreground'
+                          ? "text-primary border-b-2 border-primary"
+                          : "text-muted-foreground hover:text-foreground"
                       }`}
                     >
                       {tab.charAt(0).toUpperCase() + tab.slice(1)}
