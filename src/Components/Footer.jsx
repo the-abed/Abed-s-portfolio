@@ -67,7 +67,7 @@ export const Footer = () => {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             {/* Branding */}
             <motion.div variants={itemVariants} className="space-y-4">
-              <h3 className="text-xl font-bold text-gray-900 dark:text-white">Hriday</h3>
+              <h3 className="text-xl font-bold text-gray-900 dark:text-white">Mohammad Rashel</h3>
               <p className="text-gray-600 dark:text-gray-300 text-sm">
                 Digital designer & developer creating meaningful experiences.
               </p>
