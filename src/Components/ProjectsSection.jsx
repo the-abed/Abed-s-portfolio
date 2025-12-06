@@ -1,49 +1,47 @@
 import { AnimatePresence, motion } from "framer-motion";
-import { ArrowRight, ChevronUp, Code, Eye, Github, Play, Sparkles, Star, X, Zap } from "lucide-react";
+import { ArrowRight, ChevronUp, Eye, Github, Sparkles, Star, X, Zap } from "lucide-react";
 import { useRef, useState } from "react";
 import PropTypes from "prop-types";
 
 const projects = [
     {
         id: 8,
-        title: "TravelEase",
-        category: "Travel Management",
-        description: "TravelEase is a modern travel management platform that lets users browse vehicles and book their trips with ease.",
-        image: "/projects/p1.webp",
-        video: "/projects/20251205-1313-07.4401670.mp4",
-        tags: ["MERN Stack", "OPEN SOURCE", "Travel Management", "Vehicle Booking", "Travel Experience Sharing"],
-        demoUrl: "https://friendly-platypus-46a68b.netlify.app/",
-        githubUrl: "https://github.com/hriday33333/TravelEase-Client-Side",
+        title: "Pathshala360",
+        category: "Online Learning Platform",
+        description:
+            "Pathshala360 is a modern online learning platform that lets users explore, track, and manage trending apps with clean UI and mobile-optimized design for a smooth user experience.",
+        image: "/projects/pathshala360.png",
+        tags: ["MERN Stack", "OPEN SOURCE", "Online Learning Platform", "Course Management", "Experience Sharing"],
+        demoUrl: "https://pathshala360-ebc1b.web.app/",
+        githubUrl: "https://github.com/rashel-dev/online-learning-platform-client.git",
         featured: true,
         accentColor: "from-emerald-500 to-teal-600",
         status: "Live",
-        highlights: ["Browse different vehicles and travel models", "Book your desired travel option easily.", "Share your travel experiences.", "Read reviews and experiences from other users."],
+        highlights: ["Explore different courses", "Book your desired course easily.", "Share your learning experiences.", "Read reviews and experiences from other users."],
     },
     {
         id: 7,
-        title: "SkillSwap",
+        title: "GameHub",
         category: "Technology & Programming",
-        description: "SkillSwap is an online platform that connects learners with skill providers, offering easy skill discovery, booking, and secure user management.",
-        image: "/projects/p2.png",
-        video: "/projects/20251205-1430-43.7715822.mp4",
-        tags: ["React", "Node.js", "Stripe", "Firebase"],
-        demoUrl: "https://playful-lollipop-8c0683.netlify.app/",
-        githubUrl: "https://github.com/hriday33333/play-store",
+        description: "GameHub is an online platform that lets users explore, track, and manage trending games with clean UI and mobile-optimized design for a smooth user experience.",
+        image: "/projects/gamehub.png",
+        tags: ["React", "Node.js", "MongoDB", "Firebase"],
+        demoUrl: "https://gamehub-assignemnt.netlify.app/",
+        githubUrl: "https://github.com/rashel-dev/gamehub-gaming-library.git",
         featured: true,
         accentColor: "from-emerald-500 to-teal-600",
         status: "Live",
-        highlights: ["Skill Posting & Listing", "User management", "Skill Booking System"],
+        highlights: ["Explore different games", "Book your desired game easily.", "Share your gaming experiences.", "Read reviews and experiences from other users."],
     },
     {
         id: 1,
-        title: "Play store",
+        title: "Hero App",
         category: "App management",
         description: "React web and mobile app to explore, track, and manage trending apps with clean UI and mobile-optimized design for a smooth user experience",
         image: "/projects/p3.png",
-        video: "/projects/20251205-1454-11.4183381.mp4",
-        tags: ["React", "Node.js", "Stripe", "Redis"],
-        demoUrl: "https://playful-lollipop-8c0683.netlify.app/",
-        githubUrl: "https://github.com/hriday33333/play-store",
+        tags: ["React", "Node.js", "Tailwind CSS", "Firebase"],
+        demoUrl: "https://hero-apps-assignment.netlify.app/",
+        githubUrl: "https://github.com/rashel-dev/hero-apps-project-assignment-8.git",
         featured: true,
         accentColor: "from-purple-500 to-indigo-600",
         status: "Live",
@@ -81,10 +79,6 @@ export const ProjectsSection = () => {
     const handleFilterChange = (category) => {
         setActiveFilter(category);
         setShowAll(false);
-    };
-
-    const handleVideoPlay = (project) => {
-        setSelectedVideo(project);
     };
 
     const handleCloseVideo = () => {
@@ -235,34 +229,7 @@ export const ProjectsSection = () => {
                                             animate={{
                                                 opacity: hoveredProject === project.id ? 1 : 0,
                                             }}
-                                        >
-                                            {/* Video Play Button */}
-                                            <motion.button
-                                                onClick={() => handleVideoPlay(project)}
-                                                whileHover={{ scale: 1.1 }}
-                                                whileTap={{ scale: 0.9 }}
-                                                className="p-3 rounded-full backdrop-blur-sm border bg-white/20 text-white border-white/30 hover:bg-white/30 transition-all duration-300"
-                                            >
-                                                <Play size={20} />
-                                            </motion.button>
-
-                                            {/* Code Button */}
-                                            <motion.a
-                                                href={project.githubUrl}
-                                                target="_blank"
-                                                rel="noopener noreferrer"
-                                                whileHover={{ scale: 1.1 }}
-                                                whileTap={{ scale: 0.9 }}
-                                                className={`p-3 rounded-full backdrop-blur-sm border transition-all duration-300 ${
-                                                    project.githubUrl === "#"
-                                                        ? "bg-gray-500/50 text-gray-300 border-gray-500/30 cursor-not-allowed"
-                                                        : "bg-white/20 text-white border-white/30 hover:bg-white/30"
-                                                }`}
-                                                onClick={(e) => project.githubUrl === "#" && e.preventDefault()}
-                                            >
-                                                <Code size={20} />
-                                            </motion.a>
-                                        </motion.div>
+                                        ></motion.div>
                                     </div>
 
                                     {/* Content Section */}

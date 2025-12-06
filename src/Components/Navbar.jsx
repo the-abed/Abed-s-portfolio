@@ -83,7 +83,7 @@ export const Navbar = () => {
             <motion.div className="fixed top-4 right-4 z-50 flex gap-2" initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.3 }}>
                 {/* Website Globe Button */}
                 <motion.a
-                    href="https://benevolent-tiramisu-6e488a.netlify.app/"
+                    href="https://mohammad-rashel-portfolio.vercel.app/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className={cn(
