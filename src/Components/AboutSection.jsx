@@ -14,7 +14,7 @@ import {
   User,
 } from "lucide-react";
 import { useEffect, useState } from "react";
-import rashel from "../assets/icons/profile-image.jpg";
+import profileImage from "../../src/assets/icons/profile-image.jpg";
 
 export const AboutSection = () => {
   const [activeTab, setActiveTab] = useState("personal");
@@ -196,7 +196,7 @@ export const AboutSection = () => {
                   <div className="relative flex-shrink-0">
                     <div className="w-28 h-28 sm:w-32 sm:h-32 rounded-2xl overflow-hidden border-4 border-primary/20 shadow-2xl transition-all duration-500 group-hover:border-primary/40 group-hover:scale-105 md:group-hover:scale-110 relative">
                       <img
-                        src={rashel}
+                        src={profileImage}
                         alt="Mohammad Abed"
                         className="w-full h-full object-cover"
                       />
