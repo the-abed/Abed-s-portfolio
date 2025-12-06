@@ -37,8 +37,8 @@ export const Footer = () => {
   const contactInfo = [
     {
       icon: <Mail size={16} />,
-      text: "mrashel.dev@gmail.com",
-      href: "mrashel.dev@gmail.com",
+      text: "abedpersonal2024@gmail.com",
+      href: "abedpersonal2024@gmail.com",
     },
     {
       icon: <Phone size={16} />,

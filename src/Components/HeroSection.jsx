@@ -82,7 +82,7 @@ export const HeroSection = () => {
   const handleViewResume = () => {
     // Open resume in new tab
     window.open(
-      "/Mohammad-Rashel-resume-2025.pdf",
+      "/Resume_of_Mohammad_Abed.pdf",
       "_blank",
       "noopener,noreferrer"
     );
