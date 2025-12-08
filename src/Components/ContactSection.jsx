@@ -161,7 +161,7 @@ export const ContactSection = () => {
                     href="tel:+919315145594"
                     className="text-sm sm:text-base font-medium hover:text-primary transition-colors"
                   >
-                    +880 1851588329
+                    +880 1627381283
                   </a>
                 </div>
               </div>
@@ -175,7 +175,7 @@ export const ContactSection = () => {
                     Location
                   </p>
                   <span className="text-sm sm:text-base font-medium">
-                    Chandgaon, Chattogram, Bangladesh
+                    Hathazari, Chattogram, Bangladesh.
                   </span>
                 </div>
               </div>
@@ -190,7 +190,7 @@ export const ContactSection = () => {
                   {
                     icon: Linkedin,
                     label: "LinkedIn",
-                    url: "https://www.linkedin.com/in/mohammad-rashel/",
+                    url: "https://www.linkedin.com/in/mohammad-abed-azim/",
                   },
                   {
                     icon: Twitter,
@@ -200,7 +200,7 @@ export const ContactSection = () => {
                   {
                     icon: Github,
                     label: "GitHub",
-                    url: "https://github.com/rashel-dev",
+                    url: "https://github.com/the-abed",
                   },
                   {
                     icon: Instagram,

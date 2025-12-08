@@ -15,14 +15,14 @@ export const Footer = () => {
   const socialLinks = [
     {
       icon: <Linkedin size={18} />,
-      href: "https://www.linkedin.com/in/mohammad-rashel/",
+      href: "https://www.linkedin.com/in/mohammad-abed-azim/",
       label: "LinkedIn",
     },
     { icon: <Instagram size={18} />, href: "#", label: "Instagram" },
     { icon: <Youtube size={18} />, href: "#", label: "YouTube" },
     {
       icon: <Github size={18} />,
-      href: "https://github.com/rashel-dev",
+      href: "https://github.com/the-abed",
       label: "GitHub",
     },
   ];
@@ -42,8 +42,8 @@ export const Footer = () => {
     },
     {
       icon: <Phone size={16} />,
-      text: "+88 01851588329",
-      href: "tel:01851588329",
+      text: "+88 01627381283",
+      href: "tel:01627381283",
     },
   ];
 

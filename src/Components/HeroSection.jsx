@@ -328,8 +328,7 @@ export const HeroSection = () => {
                                 : line.includes("const") || line.includes("new")
                                 ? "text-blue-400 font-semibold"
                                 : line.includes("React") ||
-                                  line.includes("Node.js") ||
-                                  line.includes("TypeScript")
+                                  line.includes("Node.js") 
                                 ? "text-cyan-400"
                                 : line.includes("FullStackDeveloper")
                                 ? "text-emerald-400 font-semibold"
