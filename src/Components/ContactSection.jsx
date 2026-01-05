@@ -192,21 +192,13 @@ export const ContactSection = () => {
                     label: "LinkedIn",
                     url: "https://www.linkedin.com/in/mohammad-abed-azim/",
                   },
-                  {
-                    icon: Twitter,
-                    label: "Twitter",
-                    url: "#",
-                  },
+                
                   {
                     icon: Github,
                     label: "GitHub",
                     url: "https://github.com/the-abed",
                   },
-                  {
-                    icon: Instagram,
-                    label: "Instagram",
-                    url: "#",
-                  },
+                 
                 ].map((social, index) => (
                   <a
                     key={index}

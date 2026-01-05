@@ -78,7 +78,7 @@ export const AboutSection = () => {
       icon: <Linkedin className="h-5 w-5" />,
       href: "https://www.linkedin.com/in/mohammad-abed-azim/",
     },
-    { icon: <Twitter className="h-5 w-5" />, href: "#" },
+    
     {
       icon: <Mail className="h-5 w-5" />,
       href: "abedpersonal2024@gmail.com",

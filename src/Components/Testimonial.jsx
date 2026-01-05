@@ -100,7 +100,7 @@ export const TestimonialSection = () => {
   return (
     <section
       id="testimonials"
-      className="relative py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 overflow-hidden bg-gradient-to-b from-primary/5 via-background to-background"
+      className="relative py-8 sm:py-12 lg:py-20 px-4 sm:px-6 lg:px-8 overflow-hidden bg-gradient-to-b from-primary/5 via-background to-background"
       ref={ref}
     >
       {/* Floating particles background */}
