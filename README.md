@@ -2,7 +2,7 @@
 
 [Live Link](https://portfolio-v1-seven-pink.vercel.app/#)
 
-![Portfolio Header](localhost_5174_%20(6).jpg)
+![Portfolio Header](localhost_5174_%20(6).png)
 
 ## 📋 Overview
 This is my official portfolio website, designed to showcase my skills, projects, and professional journey. The site features a high-performance, dark-themed UI built with the MERN stack, focusing on clean code and interactive user experiences.
@@ -75,12 +75,13 @@ This is my official portfolio website, designed to showcase my skills, projects,
 │   ├── constants    # Project and Skill data strings
 │   └── styles       # Tailwind & Global CSS
 ├── public           # Static assets
-└── tailwind.config.js
-
+└── tailwind.config.js 
+```
 ---
-🤝 Contact Me
+
+
+## 🤝 Contact Me
+
 LinkedIn: https://www.linkedin.com/in/mohammad-abed-azim/ 
-
 GitHub: @the-abed
-
 Email: abedpersonal2024@gmail.com
